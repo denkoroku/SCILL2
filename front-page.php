@@ -17,6 +17,8 @@ get_header(); ?>
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
 		<main id="main" class="site-main" role="main">
 
+        <h2>Upcoming Events</h2>
+
             <?php 
                 $homepageEvents = new WP_Query(array(
                     'posts_per_page' => 2,
