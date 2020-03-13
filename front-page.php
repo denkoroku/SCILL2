@@ -28,7 +28,12 @@ get_header(); ?>
 			while ($homepageEvents->have_posts()) {
                 $homepageEvents->the_post(); ?>
                 <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                <p><?php echo wp_trim_words(get_the_content(), 15)?> <a href="<?php the_permalink(); ?>">Learn more</a></p>
+                <p><?php if (has_excerpt()) {
+                    echo get_the_excerpt();
+                } else {
+                    echo wp_trim_words(get_the_content(), 15);
+                }
+                ?> <a href="<?php the_permalink(); ?>">Learn more</a></p>
                 <?php }
 
 			?>
