@@ -34,9 +34,7 @@ get_header(); ?>
                     echo wp_trim_words(get_the_content(), 15);
                 }
                 ?> <a href="<?php the_permalink(); ?>">Learn more</a></p>
-                <?php }
-
-			?>
+                <?php } ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
