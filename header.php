@@ -56,32 +56,13 @@
 
             </nav>
         </div>
-	</header><!-- #masthead -->
-    <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
-        <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-            <div class="container">
-                <h1>
-                    <?php
-                    if(get_theme_mod( 'header_banner_title_setting' )){
-                        echo get_theme_mod( 'header_banner_title_setting' );
-                    }else{
-                        ;
-                    }
-                    ?>
-                </h1>
-                <p>
-                    <?php
-                    if(get_theme_mod( 'header_banner_tagline_setting' )){
-                        echo get_theme_mod( 'header_banner_tagline_setting' );
-                }else{
-                        
-                    }
-                    ?>
-                </p>
-                
-            </div>
+    </header><!-- #masthead -->
+    <?php if(is_front_page() ): ?>
+        <div id="page-sub-header">
+            <img src="<?php echo get_theme_file_uri('./SCILL_header-e1583884767393-1024x271.png'); ?>" class="img-fluid" alt="Header Image">
         </div>
     <?php endif; ?>
+
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
