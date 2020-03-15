@@ -29,7 +29,7 @@ get_header(); ?>
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
                 <div class= "date">
-                    <h4>20 MAR</h4>
+                    <p id="date-number">15</p><p id="date-month"> AUG</p>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {

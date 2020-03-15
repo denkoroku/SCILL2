@@ -1044,3 +1044,26 @@ body:not(.theme-preset-active) footer#colophon {
 #news{
   background-color: blanchedalmond;
 }
+
+.date{
+  background-color: blue;
+  height:4rem;
+  width:4rem;
+  border-radius: 50%;
+  line-height: 50%;
+}
+
+#date-number{
+  padding-top:25%;
+color:white;
+line-height:10%;
+text-align: center;
+}
+
+#date-month{
+  margin-top:-5%;
+color:white;
+list-style: height 10%;
+text-align: center;
+
+}
