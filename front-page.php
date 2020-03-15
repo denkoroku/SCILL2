@@ -1,14 +1,18 @@
 <?php
 /**
  * The template for displaying the front page only
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WP_Bootstrap_Starter
+ 
  */
 
 get_header(); ?>
 </div>
+</div>
+<div class="jumbotron">
+    <div class="container">
+<h3>SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs. We offer workshops for adults on a range of topics ...finish writing this at another time.</h3>
+add the icons from the marketing materials here
+</div>
+
 </div>
 	<section id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
@@ -28,8 +32,8 @@ get_header(); ?>
         <div class="card mb-2">
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
-                <div class= "date">
-                    <p id="date-number">15</p><p id="date-month"> AUG</p>
+                <div class= "event-date">
+                    <p id="date-number">15</p><p id="date-month"> Aug</p>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
@@ -64,6 +68,10 @@ get_header(); ?>
         <div class="card mb-2">
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
+                <div class= "news-date">
+                    <p id="date-number"><?php the_date('d') ?></p>
+                    <p id="date-month"><?php the_date('M') ?></p>
+                </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
                     echo get_the_excerpt();
