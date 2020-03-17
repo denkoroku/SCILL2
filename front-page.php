@@ -22,8 +22,9 @@ add the icons from the marketing materials here
         <div class="card-group">
         <?php 
                 $homepageEvents = new WP_Query(array(
-                    'posts_per_page' => 2,
-                    'post_type' => 'event'
+                    'posts_per_page' => -1,
+                    'post_type' => 'event',
+                    'orderby' => ''
                 ));
 
 			while ($homepageEvents->have_posts()) {
@@ -32,8 +33,11 @@ add the icons from the marketing materials here
         <div class="card mb-2">
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
+            <?php $eventDate = new DateTime(get_field('event_date')); ?>
                 <div class= "event-date">
-                    <p id="date-number">15</p><p id="date-month"> Aug</p>
+                    <p id="date-number"><?php echo $eventDate->format('d')?></p><span id="date-month"><?php 
+                        echo $eventDate->format('M');
+                    ?></span>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
