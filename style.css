@@ -1047,6 +1047,9 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 .event-date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: blue;
   height:4rem;
   width:4rem;
@@ -1063,7 +1066,7 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 #date-number{
-  padding-top:25%;
+padding-top:25%;
 color:white;
 line-height:10%;
 text-align: center;
@@ -1071,9 +1074,7 @@ font-size: large;
 }
 
 #date-month{
-margin-left: 26%;
-margin-top: -20%;
+margin-top: -10%;
 color:white;
-text-align: center;
 font-size:large;
 }
