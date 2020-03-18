@@ -17,6 +17,7 @@ get_header(); ?>
                 $today = date('Ymd');
                 $Events = new WP_Query(array(
                     'paged' => get_query_var('paged', 1),
+
                     'post_type' => 'event',
                     'meta_key' => 'event_date',
                     'orderby' => 'meta_value_num',
@@ -60,7 +61,7 @@ get_header(); ?>
             ));
          ?>
 
-         <p>Looking for a recap of past events ? <a href="<?php echo site_url('/past-events')?>">Check out our past events archive</a>.</p>
+         <p class='col-12'>Looking for a recap of past events ? <a href="<?php echo site_url('/past-events')?>">Check out our past events archive</a>.</p>
 </div>
 
 		</main><!-- #main -->
