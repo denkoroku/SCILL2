@@ -84,8 +84,8 @@ add the icons from the marketing materials here
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
                 <div class= "news-date">
-                    <p id="date-number"><?php the_date('d') ?></p>
-                    <p id="date-month"><?php the_date('M') ?></p>
+                    <p id="date-number"><?php echo get_the_date('d') ?></p>
+                    <p id="date-month"><?php echo get_the_date('M')?></p>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
