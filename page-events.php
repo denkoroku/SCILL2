@@ -15,7 +15,7 @@ get_header(); ?>
         <div class="card-group">
         <?php 
                 $today = date('Ymd');
-                $pastEvents = new WP_Query(array(
+                $Events = new WP_Query(array(
                     'paged' => get_query_var('paged', 1),
                     'post_type' => 'event',
                     'meta_key' => 'event_date',
@@ -24,15 +24,15 @@ get_header(); ?>
                     'meta_query' => array(
                         array(
                             'key' => 'event_date',
-                            'compare' => '<',
+                            'compare' => '>=',
                             'value' => $today,
                             'type' => 'numeric'
                         )
                     )
                 ));
 
-			while ($pastEvents->have_posts()) {
-                $pastEvents->the_post(); ?>
+			while ($Events->have_posts()) {
+                $Events->the_post(); ?>
     <div class="col-12">
         <div class="card mb-2">
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
@@ -60,6 +60,7 @@ get_header(); ?>
             ));
          ?>
 
+         <p>Looking for a recap of past events ? <a href="<?php echo site_url('/past-events')?>">Check out our past events archive</a>.</p>
 </div>
 
 		</main><!-- #main -->

@@ -64,7 +64,7 @@ add the icons from the marketing materials here
             <?php } ?>
 </div>
     <div class="text-center">
-    <a href='#' class= "btn btn-outline-primary">See All Events</a>
+    <a href='<?php echo site_url('events')?>' class= "btn btn-outline-primary">See All Events</a>
     </div>
 </div>
 
