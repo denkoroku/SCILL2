@@ -21,9 +21,21 @@ add the icons from the marketing materials here
         <h2>Upcoming Events</h2>
         <div class="card-group">
         <?php 
+                $today = date('Ymd');
                 $homepageEvents = new WP_Query(array(
-                    'posts_per_page' => 2,
-                    'post_type' => 'event'
+                    'posts_per_page' => -1,
+                    'post_type' => 'event',
+                    'meta_key' => 'event_date',
+                    'orderby' => 'meta_value_num',
+                    'order' => 'ASC',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'event_date',
+                            'compare' => '>=',
+                            'value' => $today,
+                            'type' => 'numeric'
+                        )
+                    )
                 ));
 
 			while ($homepageEvents->have_posts()) {
@@ -32,8 +44,11 @@ add the icons from the marketing materials here
         <div class="card mb-2">
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
+            <?php $eventDate = new DateTime(get_field('event_date')); ?>
                 <div class= "event-date">
-                    <p id="date-number">15</p><p id="date-month"> Aug</p>
+                    <p id="date-number"><?php echo $eventDate->format('d')?></p><span id="date-month"><?php 
+                        echo $eventDate->format('M');
+                    ?></span>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
@@ -49,7 +64,7 @@ add the icons from the marketing materials here
             <?php } ?>
 </div>
     <div class="text-center">
-    <a href='#' class= "btn btn-outline-primary">See All Events</a>
+    <a href='<?php echo site_url('/events')?>' class= "btn btn-outline-primary">See All Events</a>
     </div>
 </div>
 
@@ -69,8 +84,8 @@ add the icons from the marketing materials here
             <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
             <div class="card-body">
                 <div class= "news-date">
-                    <p id="date-number"><?php the_date('d') ?></p>
-                    <p id="date-month"><?php the_date('M') ?></p>
+                    <p id="date-number"><?php echo get_the_date('d') ?></p>
+                    <p id="date-month"><?php echo get_the_date('M')?></p>
                 </div>
                 <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <p class="card-text"><?php if (has_excerpt()) {
