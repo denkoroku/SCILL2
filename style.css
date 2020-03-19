@@ -1081,3 +1081,10 @@ margin-top: -10%;
 color:white;
 font-size:large;
 }
+
+.event-image-homepage{
+  margin-left: 50%;
+  margin-top: -50%;
+  width: 150px;
+  height: 100px;
+}
