@@ -42,7 +42,7 @@ add the icons from the marketing materials here
                 $homepageEvents->the_post(); ?>
     <div class="col-12">
         <div class="card mb-2">
-            <h4 class="card-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+            <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card-body">
@@ -58,7 +58,10 @@ add the icons from the marketing materials here
                     echo wp_trim_words(get_the_content(), 15);
                 } ?>
                     </p>
-                    <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
+
+                    <div>
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Event Detail</a>
+                    </div><!--ends the card footer -->
                     </div><!--ends the card body -->
                     </div><!--ends the col-6 -->
 <!-- the Event picture  -------------------------------------->
