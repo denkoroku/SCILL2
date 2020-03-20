@@ -103,6 +103,7 @@ add the icons from the marketing materials here
                 } ?>
                 </p>
                 <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
+                <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" >
             </div>
         </div>
     </div>
