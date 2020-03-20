@@ -219,6 +219,17 @@ h2.entry-title {
 h3.widget-title {
   font-size: 1.2rem; }
 
+/*sets the colour variables for use later */
+a, a:active, a:hover, a:visited {
+  color: #283373;
+  font-size: 1.2em;
+  font-weight: 300; }
+
+a:active, a:hover {
+  color: #e30613;
+  font-size: 1.2em;
+  font-weight: 300; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -245,7 +256,7 @@ table {
 --------------------------------------------------------------*/
 header#masthead {
   margin-bottom: 0;
-  background-color: #563d7c;
+  background-color: #e30613;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   padding: .74rem 1rem; }
 
@@ -878,17 +889,6 @@ body:not(.theme-preset-active) footer#colophon {
   html {
     font-size: 75%; } }
 /*--// CalCath theme changes below*/
-/*sets the colour variables for use later */
-a, a:active, a:hover, a:visited {
-  color: #283373;
-  font-size: 1.2em;
-  font-weight: 300; }
-
-a:active, a:hover {
-  color: #e30613;
-  font-size: 1.2em;
-  font-weight: 300; }
-
 #events {
   background-color: aliceBlue;
   padding-bottom: 5%; }
