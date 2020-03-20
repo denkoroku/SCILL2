@@ -60,16 +60,17 @@ add the icons from the marketing materials here
                 } ?>
                     </p>
                     <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
-                </div>
+                    </div>
+                    </div>
+<!-- the Event picture  -------------------------------------->
                 <div class="col-md-6">
                     <?php $eventImage = get_field('event_image');?>
                     <img class="card-img-top event-image-homepage" src=" <?php echo $eventImage?> ?>" alt="">
                         
                 </div>
-            </div>
-        </div>
+            </div> <!--ends the row -->
+        </div><!--ends the card -->
     </div>
-</div>
             <?php } ?>
 </div>
     <div class="text-center">
