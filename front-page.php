@@ -46,13 +46,12 @@ add the icons from the marketing materials here
             <div class="row">
                 <div class="col-md-6">
                     <div class="card-body">
-                        
                             <?php $eventDate = new DateTime(get_field('event_date')); ?>
                             <div class= "event-date">
                                 <p id="date-number"><?php echo $eventDate->format('d')?></p><span id="date-month"><?php 
                                 echo $eventDate->format('M');
                                 ?></span>
-                            </div>
+                            </div><!--ends the event date -->
                     <p class="card-text"><?php if (has_excerpt()) {
                     echo get_the_excerpt();
                 } else {
@@ -60,13 +59,13 @@ add the icons from the marketing materials here
                 } ?>
                     </p>
                     <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
-                    </div>
-                    </div>
+                    </div><!--ends the card body -->
+                    </div><!--ends the col-6 -->
 <!-- the Event picture  -------------------------------------->
                 <div class="col-md-6">
                     <?php $image = get_field('event_image');?>
                     <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
-                </div>
+                </div><!--ends the col-6 -->
             </div> <!--ends the row -->
         </div><!--ends the card -->
     </div>
