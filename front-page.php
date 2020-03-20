@@ -42,29 +42,34 @@ add the icons from the marketing materials here
                 $homepageEvents->the_post(); ?>
     <div class="col-12">
         <div class="card mb-2">
-            <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
-            <div class="card-body">
-            <?php $eventDate = new DateTime(get_field('event_date')); ?>
-                <div class= "event-date">
-                    <p id="date-number"><?php echo $eventDate->format('d')?></p><span id="date-month"><?php 
-                        echo $eventDate->format('M');
-                    ?></span>
-                </div>
-                <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                <p class="card-text"><?php if (has_excerpt()) {
+            <h4 class="card-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        
+                            <?php $eventDate = new DateTime(get_field('event_date')); ?>
+                            <div class= "event-date">
+                                <p id="date-number"><?php echo $eventDate->format('d')?></p><span id="date-month"><?php 
+                                echo $eventDate->format('M');
+                                ?></span>
+                            </div>
+                    <p class="card-text"><?php if (has_excerpt()) {
                     echo get_the_excerpt();
                 } else {
                     echo wp_trim_words(get_the_content(), 15);
                 } ?>
-                </p>
-                <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
-                <?php $image = get_field('event_image');?>
-                <img class='event-image-homepage' src='<?php echo $image?>'>
-
-            
+                    </p>
+                    <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
+                </div>
+                <div class="col-md-6">
+                    <?php $image = get_field('event_image');?>
+                    <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
+                        
+                </div>
             </div>
         </div>
     </div>
+</div>
             <?php } ?>
 </div>
     <div class="text-center">
