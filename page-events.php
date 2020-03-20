@@ -52,6 +52,8 @@ get_header(); ?>
                 } ?>
                 </p>
                 <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
+                <?php $eventImage = get_field('event_image');?>
+                    <img src=" <?php echo $eventImage?> ?>" alt="">
             </div>
         </div>
     </div>

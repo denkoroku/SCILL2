@@ -63,9 +63,16 @@ add the icons from the marketing materials here
                     </div><!--ends the col-6 -->
 <!-- the Event picture  -------------------------------------->
                 <div class="col-md-6">
+<<<<<<< HEAD
                     <?php $image = get_field('event_image');?>
                     <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
                 </div><!--ends the col-6 -->
+=======
+                    <?php $eventImage = get_field('event_image');?>
+                    <img class="card-img-top event-image-homepage" src=" <?php echo $eventImage?> ?>" alt="">
+                        
+                </div>
+>>>>>>> 84a430d5884390616c224b6d0d092a15087e4034
             </div> <!--ends the row -->
         </div><!--ends the card -->
     </div>
