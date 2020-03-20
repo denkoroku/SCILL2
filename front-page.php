@@ -41,7 +41,7 @@ add the icons from the marketing materials here
 			while ($homepageEvents->have_posts()) {
                 $homepageEvents->the_post(); ?>
     <div class="col-12">
-        <div class="card mb-2">
+        <div class="card mb-2 text-center">
             <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
             <div class="row">
                 <div class="col-md-6">
