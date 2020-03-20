@@ -62,8 +62,8 @@ add the icons from the marketing materials here
                     <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
                 </div>
                 <div class="col-md-6">
-                    <?php $image = get_field('event_image');?>
-                    <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
+                    <?php $eventImage = get_field('event_image');?>
+                    <img class="card-img-top event-image-homepage" src=" <?php echo $eventImage?> ?>" alt="">
                         
                 </div>
             </div>
