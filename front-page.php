@@ -13,13 +13,15 @@ get_header(); ?>
 
     <div class="homepage-icons">
         <div id="cup">
-            <img src="<?php echo get_theme_file_uri('assets/images/cup_icon.png') ?>">
+            <img src="<?php echo get_theme_file_uri('assets/images/cup_icon.png') ?>"> <div class="icon-descrip">support sessions</div>
         </div>
         <div id="child">
             <img src="<?php echo get_theme_file_uri('assets/images/child_icon.png') ?>">
+            <p class="icon-descrip">children's activities</p>
         </div>
         <div id="talk">
         <img src="<?php echo get_theme_file_uri('assets/images/talk_icon.png') ?>">
+        <p class="icon-descrip">workshops and talks</p>
         </div>
     </div>
 </div>

@@ -1111,9 +1111,17 @@ body:not(.theme-preset-active) footer#colophon {
     
 }
 
-.jumbotron {
-  img{
-    max-width: 20%;
+.homepage-icons{
+    display: flex;
+    justify-content: space-around;
+    img{
+      display:block;
+    max-width: 50%;
   }
-}
-
+  }
+  .icon-descrip{
+    display:flex;
+      color: #f39c19;
+      font-size: 1.5rem;
+      margin:5px;
+    }
