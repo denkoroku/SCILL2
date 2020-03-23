@@ -1125,10 +1125,16 @@ body:not(.theme-preset-active) footer#colophon {
   padding: 2px;
 }
 
-.jumbotron {
-  border: 15px double #f39c19;
+.jumbo-border {
+  border: 5px solid #f39c19;
   border-radius: 25px;
-  border-spacing: 0%;
+  padding: 3.5px;
+}
+
+.jumbotron {
+  border: 5px solid #f39c19;
+  border-radius: 17px;
+  margin-bottom: 0px;
 }
 .jumbotron h3 {
   font-size: 2rem;
@@ -1139,6 +1145,7 @@ body:not(.theme-preset-active) footer#colophon {
 .homepage-icons {
   display: flex;
   justify-content: space-around;
+  margin-left: 12%;
 }
 .homepage-icons img {
   display: block;

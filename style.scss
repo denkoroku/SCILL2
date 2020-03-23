@@ -1110,19 +1110,28 @@ body:not(.theme-preset-active) footer#colophon {
 #event-card{
     
 }
-.jumbotron{
-  border: 15px double #f39c19;
+
+.jumbo-border{
+  border: 5px solid #f39c19;
   border-radius: 25px;
-  border-spacing: 0%;
+  padding: 3.5px;
+}
+
+.jumbotron{
+  border: 5px solid #f39c19;
+  border-radius: 17px;
+  margin-bottom: 0px;
 
   h3{font-size:2rem;
   line-height: 2rem;
   font-weight:300;}
   
 }
+
 .homepage-icons{
     display: flex;
     justify-content: space-around;
+    margin-left: 12%;
     img{
       display:block;
     max-width: 50%;
