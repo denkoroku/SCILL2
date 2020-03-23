@@ -9,7 +9,7 @@ get_header(); ?>
 </div>
 <div class="jumbotron">
     <div class="container">
-    <h3>SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs. We offer workshops for adults on a range of topics ...finish writing this at another time.</h3>
+    <h3>SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs.</h3><p> We offer workshops and talks for adults on a range of ASN topics; activities for children with ASN; and support sessions for those caring for children with ASN.</p>
 
     <div class="homepage-icons">
         <div id="cup">
