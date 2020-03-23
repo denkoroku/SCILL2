@@ -932,6 +932,11 @@ body:not(.theme-preset-active) footer#colophon {
 .page-numbers {
   padding: 2px; }
 
+.jumbotron h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300; }
+
 .homepage-icons {
   display: flex;
   justify-content: space-around; }

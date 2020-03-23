@@ -9,7 +9,7 @@ get_header(); ?>
 </div>
 <div class="jumbotron">
     <div class="container">
-    <h3 class="text-center">SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs.</h3>
+    <h3 class="text-center mb-5" >SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs.</h3>
 
     <div class="homepage-icons">
         <div id="cup">
