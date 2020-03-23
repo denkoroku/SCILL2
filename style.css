@@ -1125,4 +1125,8 @@ body:not(.theme-preset-active) footer#colophon {
   padding: 2px;
 }
 
+.jumbotron img {
+  max-width: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */

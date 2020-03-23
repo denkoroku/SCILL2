@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="jumbotron">
     <div class="container">
 <h3>SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs. We offer workshops for adults on a range of topics ...finish writing this at another time.</h3>
-<img src="<?php echo get_theme_file_uri('assets/images/cup_icon.png') ?>"><img src="<?php echo get_theme_file_uri('assets/images/child_icon.png') ?>"><img src="<?php echo get_theme_file_uri('assets/images/talk_icon.png') ?>">
+<img src="<?php echo get_theme_file_uri('assets/images/cup_icon.png') ?>"> <img src="<?php echo get_theme_file_uri('assets/images/child_icon.png') ?>"> <img src="<?php echo get_theme_file_uri('assets/images/talk_icon.png') ?>">
 </div>
 
 </div>
