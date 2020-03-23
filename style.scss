@@ -1111,9 +1111,15 @@ body:not(.theme-preset-active) footer#colophon {
     
 }
 
-.jumbotron {
-  img{
-    max-width: 20%;
+
+
+  .jumbotron {
+    border: 15px double #f39c19;
+    border-radius: 25px;
+    border-spacing: 0%;
+
+    img{
+      max-width: 20%;
+    }
   }
-}
 
