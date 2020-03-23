@@ -1111,6 +1111,10 @@ body:not(.theme-preset-active) footer#colophon {
     
 }
 .jumbotron{
+  border: 15px double #f39c19;
+  border-radius: 25px;
+  border-spacing: 0%;
+
   h3{font-size:2rem;
   line-height: 2rem;
   font-weight:300;}

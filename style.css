@@ -1125,6 +1125,11 @@ body:not(.theme-preset-active) footer#colophon {
   padding: 2px;
 }
 
+.jumbotron {
+  border: 15px double #f39c19;
+  border-radius: 25px;
+  border-spacing: 0%;
+}
 .jumbotron h3 {
   font-size: 2rem;
   line-height: 2rem;
