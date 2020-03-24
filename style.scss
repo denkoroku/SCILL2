@@ -1003,6 +1003,7 @@ body:not(.theme-preset-active) footer#colophon {
 /*--------------------------------------------------------------
 # Media Query
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Notebook
 --------------------------------------------------------------*/
@@ -1080,6 +1081,20 @@ body:not(.theme-preset-active) footer#colophon {
   
 }
 
+@media only screen and (max-width: 550px) {
+  .jumbotron{
+    background-position: 0% 75%;
+    background-size:100% 30%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .jumbotron{
+    background-position: 0% 80%;
+    background-size:100% 25%;
+  }
+}
+
 .homepage-icons{
     display: flex;
     justify-content: space-around;
@@ -1092,6 +1107,24 @@ body:not(.theme-preset-active) footer#colophon {
       margin:-1px;
   }
   }
+
+  @media only screen and (max-width: 550px) {
+    .homepage-icons{
+      img{
+        max-width: 80%;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 320px) {
+    .homepage-icons{
+      img{
+        max-width: 70%;
+      }
+    }
+  }
+
   .icon-descrip{
     display:flex;
       font-size: 1.5rem;
