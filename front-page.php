@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the front page only
- 
+
  */
 
 get_header(); ?>
@@ -13,14 +13,14 @@ get_header(); ?>
                     <h3 class="text-center mb-5" >SCILL is a charity registered in Scotland and dedicated to helping parents and professionals caring for children with additional support needs.</h3>
                 <div class="homepage-icons">
                 <div id="cup">
-                    <img src="<?php echo get_theme_file_uri('assets/images/cup_icon.png') ?>"> <div class="icon-descrip">support sessions</div>
+                    <img src="<?php echo get_theme_file_uri('assets/images/500px-cup-icon.png') ?>"> <div class="icon-descrip">support sessions</div>
                 </div>
                 <div id="child">
-                    <img src="<?php echo get_theme_file_uri('assets/images/child_icon.png') ?>">
+                    <img src="<?php echo get_theme_file_uri('assets/images/500px-child-icon.png') ?>">
                     <p class="icon-descrip">children's activities</p>
                 </div>
                 <div id="talk">
-                    <img src="<?php echo get_theme_file_uri('assets/images/talk_icon.png') ?>">
+                    <img src="<?php echo get_theme_file_uri('assets/images/500px-talk-icon.png') ?>">
                     <p class="icon-descrip">workshops and talks</p>
                 </div>
             </div>

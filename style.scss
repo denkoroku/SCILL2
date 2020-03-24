@@ -1115,12 +1115,18 @@ body:not(.theme-preset-active) footer#colophon {
   border: 5px solid #f39c19;
   border-radius: 25px;
   padding: 3.5px;
+  margin:0 20px;
 }
 
 .jumbotron{
   border: 5px solid #f39c19;
   border-radius: 17px;
   margin-bottom: 0px;
+  background-color: ivory;
+  background-image: url("./assets/Images/green-ribbon.png");
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  background-size:100% 40%;
 
   h3{font-size:2rem;
   line-height: 2rem;
@@ -1134,12 +1140,15 @@ body:not(.theme-preset-active) footer#colophon {
     margin-left: 12%;
     img{
       display:block;
-    max-width: 50%;
+      max-width: 50%;
+      border-radius:50%;
+      padding:-10px;
+      margin:-1px;
   }
   }
   .icon-descrip{
     display:flex;
-      color: #f39c19;
       font-size: 1.5rem;
       margin:5px;
+      font-weight:3x00;
     }
