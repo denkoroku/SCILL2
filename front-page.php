@@ -124,7 +124,7 @@ get_header(); ?>
                     echo wp_trim_words(get_the_content(), 15);
                 } ?>
                 </p>
-                <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
+                <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Read More</a>
                 <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" >
             </div>
         </div>
