@@ -91,7 +91,7 @@ get_header(); ?>
     </div>
             <?php } ?>
 </div>
-    <div class="text-center">
+    <div class="text-center mt-4">
     <a href='<?php echo site_url('/events')?>' class= "btn btn-outline-primary">See All Events</a>
     </div>
 </div>
@@ -138,7 +138,7 @@ get_header(); ?>
     <?php } ?>
     </div><!--ends the col-12 -->
     </div><!--ends the card group-->
-                <div class="text-center">
+                <div class="text-center mt-4">
     <a href='#' class= "btn btn-outline-primary">See All News</a>
 </div>
     
