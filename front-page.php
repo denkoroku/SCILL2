@@ -75,10 +75,8 @@ get_header(); ?>
                 } ?>
                     </p>
 
-                    <div>
-                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Event Detail</a>
-                    </div><!--ends the card footer -->
                     </div><!--ends the card body -->
+                    
                     </div><!--ends the col-6 -->
 <!-- the Event picture  -------------------------------------->
                 <div class="col-md-6">
@@ -86,6 +84,9 @@ get_header(); ?>
                     <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
                 </div><!--ends the col-6 -->
             </div> <!--ends the row -->
+            <div class= "card-footer mt-3">
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Event Detail</a>
+                    </div><!--ends the card footer -->
         </div><!--ends the card -->
     </div>
             <?php } ?>
@@ -94,7 +95,6 @@ get_header(); ?>
     <a href='<?php echo site_url('/events')?>' class= "btn btn-outline-primary">See All Events</a>
     </div>
 </div>
-
 <div class= "col-md-6" id="news">
     <h2>News</h2>
     <div class="card-group">
@@ -110,27 +110,34 @@ get_header(); ?>
         <div class="card mb-2 text-center news-card">
         <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
             <hr>
-            <div class="col-md-6">
-            <img class="card-img-top event-image-homepage" src="<?php echo $featured_img_url ?>" alt="">
-            </div>
-            <div class="card-body">
-                <div class= "news-date">
-                    <p id="date-number"><?php echo get_the_date('d') ?></p>
-                    <p id="date-month"><?php echo get_the_date('M')?></p>
+            <div class= "row">
+                <div class ="col-md-6">
+                    <div class="card-body">
+                        <div class= "news-date">
+                            <p id="date-number"><?php echo get_the_date('d') ?></p>
+                            <p id="date-month"><?php echo get_the_date('M')?></p>
+                        </div>
+                            <p class="card-text"><?php if (has_excerpt()) {
+                                echo get_the_excerpt();
+                                } else {
+                                echo wp_trim_words(get_the_content(), 15);
+                                } ?>
+                            </p>
+                            
+                    </div>
                 </div>
-                <p class="card-text"><?php if (has_excerpt()) {
-                    echo get_the_excerpt();
-                } else {
-                    echo wp_trim_words(get_the_content(), 15);
-                } ?>
-                </p>
-                <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Read More</a>
-                <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" >
-            </div>
-        </div>
-    </div>
+            
+                <div class ="col-md-6">
+                    <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" >
+                </div><!--ends the col-6 -->
+            </div><!--ends the row -->
+                <div class="card-footer mt-3">
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Read More</a>
+                </div>
+        </div><!--ends the card -->
     <?php } ?>
-    </div>
+    </div><!--ends the col-12 -->
+    </div><!--ends the card group-->
                 <div class="text-center">
     <a href='#' class= "btn btn-outline-primary">See All News</a>
 </div>
