@@ -987,4 +987,8 @@ body:not(.theme-preset-active) footer#colophon {
 .page-numbers {
   padding: 2px; }
 
+.news-card {
+  background-color: ivory;
+}
+
 /*# sourceMappingURL=style.css.map */
