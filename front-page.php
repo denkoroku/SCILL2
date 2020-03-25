@@ -117,7 +117,7 @@ get_header(); ?>
                             <p id="date-number"><?php echo get_the_date('d') ?></p>
                             <p id="date-month"><?php echo get_the_date('M')?></p>
                         </div>
-                            <p class="card-text"><?php if (has_excerpt()) {
+                            <p class="card-text mt-2"><?php if (has_excerpt()) {
                                 echo get_the_excerpt();
                                 } else {
                                 echo wp_trim_words(get_the_content(), 15);
