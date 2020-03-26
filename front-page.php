@@ -128,7 +128,11 @@ get_header(); ?>
                 </div>
             
                 <div class ="col-md-6">
-                    <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" >
+                    <?php
+                        $thumb_id = get_post_thumbnail_id(get_the_ID());
+                        $alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+                    ?>
+                    <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" alt="<?php echo $alt; ?>" >
                 </div><!--ends the col-6 -->
             </div><!--ends the row -->
                 <div class="card-footer mt-3">
