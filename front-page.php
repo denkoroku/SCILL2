@@ -56,9 +56,10 @@ get_header(); ?>
 			while ($homepageEvents->have_posts()) {
                 $homepageEvents->the_post(); ?>
     <div class="col-12">
-        <div class="card mb-3 text-center" id="event-card">
+        <div class="card mb-3 text-center event-card">
+            <div class ="pb-1 mb-3" id="event-card-title">
             <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-        <hr />
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card-body">
@@ -107,9 +108,11 @@ get_header(); ?>
 			while ($homepagePosts->have_posts()) {
                 $homepagePosts->the_post(); ?>
     <div class="col-12">
-        <div class="card mb-3 text-center news-card">
+        <div class="card mb-3 text-center news-card" id="news-card">
+        <div class ="pb-1 mb-3" id="news-card-title">
         <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-            <hr>
+            </div>
+            
             <div class= "row">
                 <div class ="col-md-6">
                     <div class="card-body">
@@ -136,7 +139,7 @@ get_header(); ?>
                 </div><!--ends the col-6 -->
             </div><!--ends the row -->
                 <div class="card-footer mt-3">
-                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary btn-block">Read More</a>
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-secondary btn-block">Read More</a>
                 </div>
         </div><!--ends the card -->
                             </div>
@@ -144,7 +147,7 @@ get_header(); ?>
     </div><!--ends the col-12 -->
     
                 <div class="text-center mt-4">
-    <a href='#' class= "btn btn-outline-primary">See All News</a>
+    <a href='#' class= "btn btn-outline-secondary">See All News</a>
 </div>
     
     </div>

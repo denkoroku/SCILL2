@@ -37,6 +37,7 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+
 body {
   margin: 0;
   -webkit-font-smoothing: auto;
@@ -132,6 +133,7 @@ hr {
 
 button {
   overflow: visible;
+  
 }
 
 button,
@@ -157,6 +159,10 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+
+
+
 
 input {
   line-height: normal;
@@ -272,6 +278,28 @@ $a-tags-hover: 'a:active, a:hover';
 #{$a-tags-hover} {
   
     font-weight:300;
+}
+
+.btn-outline-primary{
+color:$scillBlue;
+border-color: $scillBlue;
+}
+
+.btn-outline-primary:hover,.btn-outline-primary:active{
+  background-color: $scillBlue;
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-secondary{
+color:$scillGreen;
+border-color: $scillGreen;
+}
+
+.btn-outline-secondary:hover,.btn-outline-secondary:active{
+  background-color: $scillGreen;
+  color: white;
+  border-color: white;
 }
 /*--------------------------------------------------------------
 # Elements
@@ -1187,6 +1215,25 @@ body:not(.theme-preset-active) footer#colophon {
     padding:2px;
 }
 
+
+#news-card-title{
+  background-color: $scillGreen;
+  color: white;
+  a{
+    color: white;
+  }
+}
+
+#event-card-title{
+  background-color: $scillBlue;
+  color: white;
+  a{
+    color: white;
+  }
+}
+.event-card{
+  background-color: ivory;
+}
 .news-card{
   background-color: ivory;
 }

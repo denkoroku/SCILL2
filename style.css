@@ -226,6 +226,24 @@ a, a:active, a:hover, a:visited {
 a:active, a:hover {
   font-weight: 300; }
 
+.btn-outline-primary {
+  color: #283373;
+  border-color: #283373; }
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background-color: #283373;
+  color: white;
+  border-color: white; }
+
+.btn-outline-secondary {
+  color: #098F3A;
+  border-color: #098F3A; }
+
+.btn-outline-secondary:hover, .btn-outline-secondary:active {
+  background-color: #098F3A;
+  color: white;
+  border-color: white; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -982,6 +1000,21 @@ body:not(.theme-preset-active) footer#colophon {
 
 .page-numbers {
   padding: 2px; }
+
+#news-card-title {
+  background-color: #098F3A;
+  color: white; }
+  #news-card-title a {
+    color: white; }
+
+#event-card-title {
+  background-color: #283373;
+  color: white; }
+  #event-card-title a {
+    color: white; }
+
+.event-card {
+  background-color: ivory; }
 
 .news-card {
   background-color: ivory; }
