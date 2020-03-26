@@ -81,8 +81,10 @@ get_header(); ?>
                     </div><!--ends the col-6 -->
 
                 <div class="col-md-6">
-                    <?php $image = get_field('event_image');?>
-                    <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
+                    <?php $imageID = get_field('event_image'); ?>
+                    <?php $image = wp_get_attachment_image_src( $imageID, 'full' ); ?>
+                    <?php $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true); ?>
+                    <img class="card-img-top event-image-homepage" src="<?php echo $image[0]?> ?>" alt="<?php echo $alt_text; ?>">
                 </div><!--ends the col-6 -->
             </div> <!--ends the row -->
             <div class= "card-footer mt-3">
