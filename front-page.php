@@ -56,7 +56,7 @@ get_header(); ?>
 			while ($homepageEvents->have_posts()) {
                 $homepageEvents->the_post(); ?>
     <div class="col-12">
-        <div class="card mb-2 text-center" id="event-card">
+        <div class="card mb-3 text-center" id="event-card">
             <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <hr />
             <div class="row">
@@ -107,7 +107,7 @@ get_header(); ?>
 			while ($homepagePosts->have_posts()) {
                 $homepagePosts->the_post(); ?>
     <div class="col-12">
-        <div class="card mb-2 text-center news-card">
+        <div class="card mb-3 text-center news-card">
         <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
             <hr>
             <div class= "row">
@@ -135,6 +135,7 @@ get_header(); ?>
                     <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary btn-block">Read More</a>
                 </div>
         </div><!--ends the card -->
+                            </div>
     <?php } ?>
     </div><!--ends the col-12 -->
     </div><!--ends the card group-->
