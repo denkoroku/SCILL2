@@ -79,7 +79,7 @@ get_header(); ?>
                     </div><!--ends the card body -->
                     
                     </div><!--ends the col-6 -->
-<!-- the Event picture  -------------------------------------->
+
                 <div class="col-md-6">
                     <?php $image = get_field('event_image');?>
                     <img class="card-img-top event-image-homepage" src=" <?php echo $image?> ?>" alt="">
