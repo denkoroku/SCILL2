@@ -221,13 +221,9 @@ h3.widget-title {
 
 /*sets the colour variables for use later */
 a, a:active, a:hover, a:visited {
-  color: #283373;
-  font-size: 1.2em;
   font-weight: 300; }
 
 a:active, a:hover {
-  color: #e30613;
-  font-size: 1.2em;
   font-weight: 300; }
 
 /*--------------------------------------------------------------

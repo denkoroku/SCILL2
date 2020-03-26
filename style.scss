@@ -266,13 +266,11 @@ $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
 #{$a-tags} {
-    color: $scillBlue;
-    font-size: 1.2em;
+    
     font-weight:300;
 }
 #{$a-tags-hover} {
-    color: $scillRed;
-    font-size: 1.2em;
+  
     font-weight:300;
 }
 /*--------------------------------------------------------------
