@@ -971,9 +971,11 @@ body:not(.theme-preset-active) footer#colophon {
   flex-direction: column;
   align-items: center;
   background-color: #283373;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
+  border-style: double;
+  border-color: ivory;
   line-height: 50%; }
 
 .news-date {
@@ -981,9 +983,11 @@ body:not(.theme-preset-active) footer#colophon {
   flex-direction: column;
   align-items: center;
   background-color: #098F3A;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
+  border-style: double;
+  border-color: ivory;
   line-height: 50%; }
 
 #date-number {
