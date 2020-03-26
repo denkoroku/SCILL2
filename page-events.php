@@ -52,8 +52,10 @@ get_header(); ?>
                 } ?>
                 </p>
                 <a href="<?php the_permalink( ) ?>" class="solid-btn">Read More</a>
-                <?php $eventImage = get_field('event_image');?>
-                    <img src=" <?php echo $eventImage?> ?>" alt="">
+                    <?php $imageID = get_field('event_image'); ?>
+                    <?php $image = wp_get_attachment_image_src( $imageID, 'full' ); ?>
+                    <?php $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true); ?>
+                    <img src="<?php echo $image[0]?> ?>" alt="<?php echo $alt_text; ?>">
             </div>
         </div>
     </div>
