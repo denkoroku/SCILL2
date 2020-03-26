@@ -58,7 +58,7 @@ get_header(); ?>
     <div class="col-12">
         <div class="card mb-2 text-center" id="event-card">
             <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-            <hr />
+        <hr />
             <div class="row">
                 <div class="col-md-6">
                     <div class="card-body">
@@ -85,14 +85,14 @@ get_header(); ?>
                 </div><!--ends the col-6 -->
             </div> <!--ends the row -->
             <div class= "card-footer mt-3">
-                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Event Detail</a>
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary btn-block">Event Detail</a>
                     </div><!--ends the card footer -->
         </div><!--ends the card -->
     </div>
             <?php } ?>
 </div>
     <div class="text-center mt-4">
-    <a href='<?php echo site_url('/events')?>' class= "btn btn-outline-primary">See All Events</a>
+    <a href='<?php echo site_url('/events')?>' class= "btn btn-outline-primary btn-block">See All Events</a>
     </div>
 </div>
 <div class= "col-md-6" id="news">
@@ -132,7 +132,7 @@ get_header(); ?>
                 </div><!--ends the col-6 -->
             </div><!--ends the row -->
                 <div class="card-footer mt-3">
-                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary">Read More</a>
+                    <a href="<?php the_permalink( ) ?>" class="btn btn-outline-primary btn-block">Read More</a>
                 </div>
         </div><!--ends the card -->
     <?php } ?>
