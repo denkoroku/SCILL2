@@ -149,7 +149,7 @@ get_header(); ?>
     </div><!--ends the col-12 -->
     
                 <div class="text-center mt-4">
-    <a href='#' class= "btn btn-outline-secondary">See All News</a>
+    <a href='<?php echo site_url('/blog')?>' class= "btn btn-outline-secondary">See All News</a>
 </div>
     
     </div>
