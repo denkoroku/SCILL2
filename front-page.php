@@ -6,7 +6,9 @@
 
 get_header(); ?>
 </div>
-    </div>
+</div>
+    
+
         <div class='jumbo-border'>
             <div class="jumbotron">
                 <div class="container">

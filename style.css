@@ -904,6 +904,12 @@ body:not(.theme-preset-active) footer#colophon {
   html {
     font-size: 75%; } }
 /*--// CalCath theme changes below*/
+.site {
+  background-color: ivory; }
+
+#content.site-content {
+  background-color: ivory; }
+
 .jumbo-border {
   border: 5px solid #f39c19;
   border-radius: 25px;

@@ -1084,6 +1084,17 @@ body:not(.theme-preset-active) footer#colophon {
 
 /*--// CalCath theme changes below*/
 
+.site{
+background-color: ivory;
+  
+  
+}
+
+
+#content.site-content {
+  background-color: ivory;
+}
+
 .jumbo-border{
   border: 5px solid $scillOrange;
   border-radius: 25px;
